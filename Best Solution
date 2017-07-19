@@ -1,0 +1,10 @@
+void printInorder(int *arr, int start, int end)
+{
+  if(start >= end)
+  return;
+  
+  printInorder(arr, 2*start+1, end);
+  cout << arr[start] << " ";
+  printInorder(arr, 2*start+2, end);
+  
+}
